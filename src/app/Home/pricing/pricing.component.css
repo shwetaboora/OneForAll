@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F7F3E9; /* Light Cream background color */
+  }
+
+  /* Main content styles */
+  .container {
+    max-width: 800px;
+    margin: 50px auto; /* Added margin to center the container */
+    padding: 20px;
+    border-radius: 50px; /* Make the container curvy */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a larger shadow effect */
+    background-color: #FFF; /* White background color */
+    position: relative; /* To position the decorations */
+  }
+
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #FFC107, #F44336);
+    border-radius: 50px; /* Add a gradient background */
+    z-index: -1; /* Push the background below the container content */
+  }
+
+  h1 {
+    text-align: center;
+    color: #253240; /* Dark Blue header text color */
+    margin-top: 0;
+    padding-top: 20px; /* Add some top padding to separate from the container border */
+  }
+
+  p {
+    text-align: justify;
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 15px; /* Add bottom margin between paragraphs */
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }

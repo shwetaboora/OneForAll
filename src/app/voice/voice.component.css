@@ -1,0 +1,36 @@
+*{
+    background-color: #f9f3ea;
+    padding-bottom: 29.9%;
+    
+}
+button {
+    padding: 10px 20px;
+    margin: 25px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+#listeningMessage {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e67e22;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #f9f3ea;
+}
+
+#spokenText {
+    margin-top: 20px;
+    /* padding: 10px; */
+    border: 1px solid black;
+    background-color:  #f9f3ea;
+    font-size: 25px;
+    /* line-height: 1.5; */
+    text-align: center;
+}

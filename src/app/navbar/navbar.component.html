@@ -1,0 +1,43 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-2">
+        <div class="logo">
+          <img src="/assets/Logo.jpg" alt="flower" width="135px" height="68.99px">
+        </div>
+
+
+      </div>
+      <div class="col-md-10 col-sm-10 col-10">
+        <div class="menu_icon" [class.menu_iconClass]="menu_icon_variable" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu " [class.menuClass]="menuVariable">
+          <ul>
+            <li>
+              <button mat-button><a href="#" class="nav-link active" routerLink="/">Home</a></button>
+            </li>
+            <li>
+              <button mat-button><a href="#" class="nav-link active" routerLink="/about">About Us</a></button>
+            </li>
+            <li>
+              <button mat-button><a href="#" class="nav-link active" routerLink="/picboard">Picture Board</a></button>
+            </li>
+            <li> <button mat-button><a href="https://jifmsigntotext.streamlit.app/" class="nav-link active">Sign
+                  Langugae</a></button></li>
+            <li><button mat-button><a href="#" class="nav-link active" routerLink="/voice">Speak to Type</a></button>
+            </li>
+            <li><button mat-button><a href="https://texttospeech-29jvpduzu.streamlit.app/" class="nav-link active">Voice
+                  Narrate</a></button>
+            </li>
+            <li> <button mat-button><a href="#" class="nav-link active" routerLink="/contact">Contact Us</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,13 @@
+<div class="speech-to-text">
+    <button (click)="startListening()" [disabled]="isListening">Start Listening</button>
+    <button (click)="stopListening()" [disabled]="!isListening">Stop Listening</button>
+
+    <div *ngIf="isListening" id="listeningMessage">
+        <h2>Listening...</h2>
+    </div>
+
+    <div *ngIf="!isListening && spokenText" id="spokenText">
+        <h2>Spoken Text:</h2>
+        <p>{{ spokenText }}</p>
+    </div>
+</div>

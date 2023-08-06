@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="content">
+        <div class="highlight">
+            <h2>Tutorial</h2>
+        </div>
+
+        <div class="video-container">
+            <vg-player>
+                <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
+                    <source src="/assets/video.mov" type="video/mp4">
+                </video>
+            </vg-player>
+        </div>
+    </div>
+</div>
